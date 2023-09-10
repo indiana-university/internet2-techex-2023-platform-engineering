@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Internet2 Technology Exchange: Platform Engineering</title>
+
+    <link href="//assets.iu.edu/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/iu.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section class="nofooter" data-background-image="img/techex-cover.png" data-background-size="contain" data-background-color="#343434">
+          <!-- <img src="img/iu-logo-top-tail.svg" style="position: absolute; left: 0; top: 0; width: 10%; background: inherit; border: 0; box-shadow: none;" /> -->
+          <h3 style="color: white; margin-top: 30%; margin-bottom: 1em; text-align: left; font-size: 1.25em; text-transform: uppercase;">
+            Platform Engineering<br/>
+            <!-- <small style="color: #999;">A Platform for Application Development</small> -->
+          </h3>
+          <div style="float: left; text-align: left; color: #bbb">
+            <strong>James Bennett</strong><br />
+            <small>Enterprise Platforms, Indiana University</small>
+          </div>
+        </section>
+        <!-- <section data-background-image="img/questions.jpg" class="has-image-credit">
+          <h2 class="textbox">Questions?</h2>
+          <span class="image-credit">Image credit: NASA HQ Photo/<a href="https://www.flickr.com/photos/nasahqphoto/52503151166">Flickr.com</a></span>
+        </section> -->
+        <section class="nofooter" data-background-image="img/techex-transition.png" data-background-size="contain" data-background-position="right">
+          <div style="width: 55%;">
+            <h3 style="text-align: left;">
+              Questions?
+              <!-- <small style="text-align: left; color: #999; font-weight: 400;">A Platform for Application Development</small> -->
+            </h3>
+          </div>
+        </section>
+        <div id="footer" class="footer" style="display: none;">
+          <!-- <img src="img/iu-logo.svg" />
+          <span style="text-align: left; width: 15em; margin-top: 1%;">Internet2 TechEx 2022</span> -->
+          <img src="img/techex-footer.png" style="width: 60%;" />
+        </div>
+        <div id="image-credit" style="display: none;"></div>
+			</div>
+    </div>
+    <div id="background" style="display: none;"></div>
+
+		<script src="dist/reveal.js"></script>
+		<!-- <script src="plugin/notes/notes.js"></script> -->
+		<!-- <script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script> -->
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+        hash: true,
+        navigationMode: 'linear',
+        history: false,
+        controls: false,
+        progress: true,
+        overview: false,
+      });
+      Reveal.addEventListener( 'slidechanged', function( event ) {
+        var suppressFooter = event.currentSlide.classList.contains('nofooter');
+        var hasBackgroundImage = event.currentSlide.attributes.getNamedItem('data-background-image') !== null || event.currentSlide.attributes.getNamedItem('data-background-video') !== null;
+				if(suppressFooter || hasBackgroundImage) {
+					document.getElementById('footer').style.display = 'none';
+				} else {
+					document.getElementById('footer').style.display = 'flex';
+        }
+        
+        var suppressBackground = !event.currentSlide.classList.contains('has-background');
+        if(suppressBackground || hasBackgroundImage) {
+					document.getElementById('background').style.display = 'none';
+				} else {
+					document.getElementById('background').style.display = 'block';
+        }
+
+        var showImageCredit = event.currentSlide.classList.contains('has-image-credit');
+        if(showImageCredit) {
+          document.getElementById('image-credit').innerHTML = event.currentSlide.getElementsByClassName('image-credit')[0].innerHTML;
+          document.getElementById('image-credit').style.display = 'block';
+        } else {
+          document.getElementById('image-credit').innerHTML = null;
+          document.getElementById('image-credit').style.display = 'none';
+        }
+			} );
+		</script>
+	</body>
+</html>
