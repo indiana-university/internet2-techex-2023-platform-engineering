@@ -155,41 +155,105 @@
               <h2 style="text-align: left; font-size: var(--r-heading3-size);">Core Components</h2>
             </div>
           </section>
-          <section>
-            <h3>Thinnest viable platform</h3>
-            <ul>
-              <li class="fragment fade-in-then-semi-out"></li>
-            </ul>
+          <section data-background="linear-gradient(90deg, white 45%, #efefef 45%)">
+            <div class="two-column">
+              <div class="left">
+                <h3 style="margin-top: 1em; font-size: 1.3em;">Thinnest viable platform</h3>
+                <ul style="font-size: .8em;">
+                  <li class="fragment fade-in-then-semi-out">Content pulled together into KB and cloud.iu.edu</li>
+                  <li class="fragment fade-in-then-semi-out">Support forms tied into automation</li>
+                </ul>
+              </div>
+              <div class="right">
+                <div class="r-stack">
+                  <img src="img/under-construction.png" style="width: 80%;" />
+                </div>
+              </div>
+            </div>
           </section>
-          <section>
-            <h3>Asset/configuration management</h3>
-            <ul>
-              <li class="fragment fade-in-then-semi-out"></li>
-            </ul>
+          <section data-background="linear-gradient(90deg, white 45%, #efefef 45%)">
+            <div class="two-column">
+              <div class="left">
+                <h3 style="margin-top: 1em; font-size: 1.3em;">Asset/config management</h3>
+                <ul style="font-size: .8em;">
+                  <li class="fragment fade-in-then-semi-out">Keep track of what is needed and deployed</li>
+                  <li class="fragment fade-in-then-semi-out">Configuration managed in Git with IaC</li>
+                  <li class="fragment fade-in-then-semi-out">Secrets managed in HashiCorp Vault</li>
+                </ul>
+              </div>
+              <div class="right">
+                <div class="r-stack">
+                  <img src="img/app-development.png" style="width: 80%; margin-top: 10%;" />
+                </div>
+              </div>
+            </div>
           </section>
-          <section>
-            <h3>Infrastructure orchestration</h3>
-            <ul>
-              <li class="fragment fade-in-then-semi-out"></li>
-            </ul>
+          <section data-background="linear-gradient(90deg, white 45%, #efefef 45%)">
+            <div class="two-column">
+              <div class="left">
+                <h3 style="margin-top: 1em; font-size: 1.3em;">Infrastructure orchestration</h3>
+                <ul style="font-size: .8em;">
+                  <li class="fragment fade-in-then-semi-out">Everything possible is IaC (Terraform/Ansible)</li>
+                  <li class="fragment fade-in-then-semi-out">Orchestrated with Argo Events/Workflows</li>
+                  <li class="fragment fade-in-then-semi-out">Artifact storage serves as a hub</li>
+                </ul>
+              </div>
+              <div class="right">
+                <div class="r-stack">
+                  <img src="img/maintainability.png" style="width: 80%; margin-top: 10%;" />
+                </div>
+              </div>
+            </div>
           </section>
-          <section>
-            <h3>Environment management</h3>
-            <ul>
-              <li class="fragment fade-in-then-semi-out"></li>
-            </ul>
+          <section data-background="linear-gradient(90deg, white 45%, #efefef 45%)">
+            <div class="two-column">
+              <div class="left">
+                <h3 style="margin-top: 1em; font-size: 1.3em;">Environment management</h3>
+                <ul style="font-size: .8em;">
+                  <li class="fragment fade-in-then-semi-out">Self-service mechanisms</li>
+                  <li class="fragment fade-in-then-semi-out">Codifying difference between environments</li>
+                </ul>
+              </div>
+              <div class="right">
+                <div class="r-stack">
+                  <img src="img/continuous-delivery.png" style="width: 80%;" />
+                </div>
+              </div>
+            </div>
           </section>
-          <section>
-            <h3>Deployment management</h3>
-            <ul>
-              <li class="fragment fade-in-then-semi-out"></li>
-            </ul>
+          <section data-background="linear-gradient(90deg, white 45%, #efefef 45%)">
+            <div class="two-column">
+              <div class="left">
+                <h3 style="margin-top: 1em; font-size: 1.3em;">Deployment management</h3>
+                <ul style="font-size: .8em;">
+                  <li class="fragment fade-in-then-semi-out">CI/CD pipelines as-a-service</li>
+                  <li class="fragment fade-in-then-semi-out">Hooks to alert teams when input is needed</li>
+                  <li class="fragment fade-in-then-semi-out">Automated approval in certain cases</li>
+                </ul>
+              </div>
+              <div class="right">
+                <div class="r-stack">
+                  <img src="img/assembly-line.png" style="width: 80%;" />
+                </div>
+              </div>
+            </div>
           </section>
-          <section>
-            <h3>Role-based access control</h3>
-            <ul>
-              <li class="fragment fade-in-then-semi-out"></li>
-            </ul>
+          <section data-background="linear-gradient(90deg, white 45%, #efefef 45%)">
+            <div class="two-column">
+              <div class="left">
+                <h3 style="margin-top: 1em; font-size: 1.3em;">Role-based access control</h3>
+                <ul style="font-size: .8em;">
+                  <li class="fragment fade-in-then-semi-out">Seamless access to services we maintain</li>
+                  <li class="fragment fade-in-then-semi-out">Integration with Incommon TAP</li>
+                  <li class="fragment fade-in-then-semi-out">Group release through SAML/OIDC integration</li>
+                </ul>
+              </div>
+              <div class="right">
+                <div class="r-stack">
+                  <img src="img/security.png" style="width: 80%; margin-top: 10%;" />
+                </div>
+              </div>
+            </div>
           </section>
         </section>
         <section>
@@ -204,6 +268,7 @@
               <li class="fragment fade-in-then-semi-out">Increasing use of purpose-built tools</li>
               <li class="fragment fade-in-then-semi-out">Want development to be close to production</li>
               <li class="fragment fade-in-then-semi-out">Container/cloud-based development environments</li>
+              <li class="fragment fade-in-then-semi-out">GitHub Codespaces</li>
             </ul>
           </section>
           <section>
